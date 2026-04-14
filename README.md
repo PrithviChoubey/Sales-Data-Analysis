@@ -27,7 +27,7 @@ df = pd.read_excel("Sales Dashboard.xlsx")
 df.columns =df.columns.str.strip()
 
 - This shows yearly sales trend
-- 
+   
 yearly_sales = df.groupby("Year")["Sales"].sum()
 print(yearly_sales)
 yearly_sales.plot(kind="pie",autopct="%1.1f%%")
